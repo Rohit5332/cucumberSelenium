@@ -21,10 +21,7 @@ public class RegisterStepDef extends BaseClass {
 	@Given("user is on Registration page")
 	public void user_is_on_registration_page() throws Exception {
 		navigateToHomePage();
-		// driver.get("https://www.amazon.in");
-//		Thread.sleep(9000);
-//		wait = new WebDriverWait(driver, null);
-//		wait.until(ExpectedConditions.elementToBeClickable(By.id("nav-link-accountList")));
+
 	}
 
 	@When("user select Hello Sign in")
@@ -47,7 +44,6 @@ public class RegisterStepDef extends BaseClass {
 				"//input[@class ='a-input-text a-span12 auth-required-field auth-require-fields-match auth-require-password-validation']"))
 				.sendKeys("test312");
 		driver.findElement(By.className("a-button-input")).click();
-
 
 	}
 
